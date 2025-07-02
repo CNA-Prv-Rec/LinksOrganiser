@@ -18,7 +18,7 @@ export async function GET(request: Request, response: Response) {
         {
             sql += " where dr.title like '%"+ searchTerm  + "%' or drc.developerresourcecategory like '%" + searchTerm + "%' or dr.description like '%" + searchTerm + "%'"
         }
-         const result =await db.request().query(sql)
+        const result =await db.request().query(sql)
        
         return NextResponse.json({developerLinks: result.recordset})
         

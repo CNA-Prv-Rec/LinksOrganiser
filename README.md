@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project overview
+
+I keep losing the best bits of youtube and the wider web. My music videos, great developer and architect videos, and the like. They get lost amongst the algorithms that serve up new content. So I have to bookmark all my stuff so I can come back to it later.
+
+While I have bookmarks in my browser for all this stuff, I thought I would create a database and website for skills demo purposes to organise them all. This demo is in next.js which I'm finding a very lovely framework. It's essentially a recreation of the bookmarks system in browsers.
+
+It's for me only, and intended to run locally, so no need for authentication or security features that I would normally spend time on with other websites. Solely for my own use.
+
+Improvements - I should probably learn an ORM like sequlize to do the data-related work. And I could probably spend more time with tailwind, as it's only a beginner-level tech for me. I found it cumbersome on this project but that's mostly because of the default bootstrap styling getting in my way, not because of tailwind itself.
+
 ## Getting Started
 
 First, run the development server:

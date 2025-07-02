@@ -1,6 +1,3 @@
-
-
-
 export default function MusicCard(props: { id: bigint, url: string, artist:string, song:string, category:string, className: string }) {
   return (
     <div className="card" >
@@ -15,10 +12,8 @@ export default function MusicCard(props: { id: bigint, url: string, artist:strin
         <div className="card-footer">
            <i>{props.category}</i>
         </div>
-</div>
+      </div>
    </div>
-   
-
-    </div>
+  </div>
   );
 }

@@ -48,7 +48,6 @@ body {
   vertical-align: middle;
   user-select: none;
   padding:5px;
-/*font-weight: bold;*/
   border-radius: 10px;
   border-color: white;
 }
@@ -70,10 +69,7 @@ body {
 .centered{
   margin:auto;
   width:100%;
-  display:block;
- 
-/*  justify-content: center;*/
-  
+  display:block; 
   overflow: auto;
 }
 
@@ -82,7 +78,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
- display: inline-block;
+  display: inline-block;
   width: 18rem;
   text-align: center;
   margin:5px;
@@ -158,6 +154,11 @@ body {
 
 .greenBackground{
   background-color: palegreen;
+  border-radius:10px;
+}
+
+.amberBackground{
+  background-color: palegoldenrod;
   border-radius:10px;
 }
 

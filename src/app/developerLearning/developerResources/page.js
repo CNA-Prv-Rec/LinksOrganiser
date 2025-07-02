@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
 import Link from 'next/link';
-import DeveloperResourceCard from "../../components/developerResourceCard/developerResourceCard.tsx";
 import {
   Table,
   TableHeader,
@@ -38,10 +37,8 @@ export default function developerResources() {
 
     },[searchTerm])
 
-        const handleChange = (e)  =>{
-           
-            setSearchTerm(e.target.value);
-       
+    const handleChange = (e)  =>{
+        setSearchTerm(e.target.value);
     }
 
    
@@ -54,7 +51,8 @@ export default function developerResources() {
             <br />
             <h3 className="heading">Developer Resources</h3>
             <br />
-            Search: <input type="text" name="SearchBox" onChange={handleChange} className="borderedInput text-input w-full" />
+            Search: 
+            <input type="text" name="SearchBox" onChange={handleChange} className="borderedInput text-input w-full" />
             <br />
             <div className="flex md:flex md:flex-grow flex-row-reverse space-x-1">
                 <Link href="./developerResourceAddItem" className="base-btn btn-purple btn-space-around">Add</Link>
@@ -70,8 +68,6 @@ export default function developerResources() {
                     <TableBody>
 
                         {developerResourceItems.map(item => (
-      
-
                             <TableRow key={item.ID}  className={item.className}>
                                 <TableCell width="*">
                                     <a href={item.URL}>{item.title}</a>
@@ -79,9 +75,7 @@ export default function developerResources() {
                                 <TableCell width="20%">
                                     {item.category}
                                 </TableCell>
-             
                             </TableRow>
-
                         ))}
                         
                     </TableBody>

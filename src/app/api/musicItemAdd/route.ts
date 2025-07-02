@@ -29,20 +29,13 @@ export async function POST(req:NextRequest, res:NextResponse) {
     await request.query(sqlQuery, values);
  
     return NextResponse.json({ message: 'Success' }, { status: 200 });
-    
- 
 
  }
   catch(err)
   {
-
       return NextResponse.json({ error: err}, { status: 400 });
      
   }
-
-
-
-
 
 }
 
