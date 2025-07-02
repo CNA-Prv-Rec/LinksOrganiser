@@ -1,8 +1,13 @@
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 @import "tailwindcss";
+
+ 
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground:  #171717;
 }
 
 @theme inline {
@@ -24,3 +29,158 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#body-bootstrap-override {
+  background: rgb(1, 41, 1);
+  color: white;
+}
+
+.heading{
+  font-weight: bold;
+  
+}
+
+.base-btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  vertical-align: middle;
+  user-select: none;
+  padding:5px;
+/*font-weight: bold;*/
+  border-radius: 10px;
+  border-color: white;
+}
+
+
+.btn-purple{
+  background-color: plum ;
+  color: black;
+}
+.btn-purple:hover{
+  background-color: purple;
+  color:white;
+}
+
+.btn-space-around{
+  margin: 10px;
+}
+
+.centered{
+  margin:auto;
+  width:100%;
+  display:block;
+ 
+/*  justify-content: center;*/
+  
+  overflow: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+ display: inline-block;
+  width: 18rem;
+  text-align: center;
+  margin:5px;
+  clear:none;
+  float:left;
+  border-style:none !important;
+}
+
+
+.card-content {
+  padding: 0px;
+  border-radius:10px;
+  border-style:none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+}
+
+.card-content >div{
+  border-radius:10px ;
+}
+
+.card-title {
+  font-size: 1.0rem;
+  font-weight:bolder;
+  margin: 0 0 5px;
+  color: #333;
+  padding: 5px;
+}
+
+.card-body {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  padding: 5px !important;
+  
+}
+
+.card-body> a{
+  color:black;
+}
+.card-footer {
+  font-size: 1rem;
+  color: #3f3f3f;
+  margin-bottom: 0px;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+
+.pinkBackground{
+  background-color: pink;
+  border-radius: 10px;
+}
+.purpleBackground{
+  background-color:rgb(216, 164, 216);
+  border-radius: 10px;
+}
+
+.greenBackground{
+  background-color: palegreen;
+  border-radius:10px;
+}
+
+.borderedInput{
+  border-style:solid;
+  border-color: black;
+  border-width:1px;
+}
+
+.text-input{
+  background-color: white;
+  color:black;
+}
+.dev-resources-table{
+  background-color: transparent;
+  color:white;
+  padding:0px;
+
+}
+.rounded-Corners{
+  border-radius:10px;
+}
+
+
+      
+    
